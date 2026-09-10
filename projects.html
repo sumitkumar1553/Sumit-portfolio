@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Sumit Portfolio</title>
 
+    <meta name="description" content="Data analytics projects by Sumit using Power BI, SQL, Excel, and dashboards for NHAI infrastructure, hospital analytics, supply chain, Zomato sales, and super store analysis.">
+    <meta name="author" content="Sumit">
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="icon" type="image/png" href="Images/logo.png">
+    <link rel="icon" type="image/png" href="Images/logo.png">
 
     <link rel="stylesheet" href="CSS/projects.css">
     <script src="projects.js" defer></script>
@@ -18,21 +21,21 @@
 <body>
 
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main Navigation">
 
             <div class="logo">
                 <img src="Images/logo.png" alt="Sumit Portfolio Logo">
                 <span>Sumit Portfolio</span>
             </div>
 
-            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu">
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
             <div class="nav-links" id="navLinks">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <a href="projects.html" class="active">Projects</a>
+                <a href="projects.html" class="active" aria-current="page">Projects</a>
                 <a href="certificates.html">Certificates</a>
                 <a href="resume.html">Resume</a>
                 <a href="contact.html">Contact</a>
@@ -41,158 +44,194 @@
         </nav>
     </header>
 
-    <section class="project-header">
-        <div class="hero-box">
-            <h1>My Projects</h1>
-            <p>Some projects created using Excel, SQL and Power BI</p>
-            <div class="line"></div>
-        </div>
-    </section>
+    <main>
 
-    <section class="project-section">
+        <section class="project-header">
+            <div class="hero-box">
+                <h1>My Projects</h1>
+                <p>Some projects created using Excel, SQL and Power BI</p>
+                <div class="line"></div>
+            </div>
+        </section>
 
-        <div class="project-card">
+        <section class="project-section">
 
-            <div class="project-image">
-                <img id="hospitalImage" class="dashboard-image" src="Images/Hospital_Analysis_Projects/Home_Dashboard (1).png" alt="Hospital Dashboard" loading="lazy">
+            <div class="project-card">
 
-                <div class="project-slider-controls">
-                    <button type="button" class="slider-btn" data-project="hospital" data-action="prev">
-                        <i class="fa-solid fa-angle-left"></i>
-                    </button>
+                <div class="project-image">
+                    <img id="nhaiImage" class="dashboard-image" src="Images/NHAI_Infrastructure_&_Operations_Analytics_Dashboard/Project_Overview (1).png" alt="NHAI Infrastructure & Operations Analytics Dashboard" loading="lazy">
 
-                    <p id="hospitalCounter">1 of 6</p>
+                    <div class="project-slider-controls">
+                        <button type="button" class="slider-btn" data-project="nhai" data-action="prev" aria-label="Previous NHAI dashboard image">
+                            <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                        </button>
 
-                    <button type="button" class="slider-btn" data-project="hospital" data-action="next">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </button>
+                        <p id="nhaiCounter">1 of 5</p>
+
+                        <button type="button" class="slider-btn" data-project="nhai" data-action="next" aria-label="Next NHAI dashboard image">
+                            <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project-content">
-                <p class="project-type">Power BI & SQL Dashboard</p>
-                <h2>Hospital Data Analytics Dashboard</h2>
-                <p class="date">February 2026</p>
+                <div class="project-content">
+                    <p class="project-type">Power BI Dashboard</p>
+                    <h2>NHAI Infrastructure & Operations Analytics Dashboard</h2>
+                    <p class="date">September 2026</p>
 
-                <p class="description">
-                    Developed an interactive Hospital Data Analytics Dashboard using Power BI and SQL to analyze patient records, doctor performance, appointments, finance, and hospital operations.
-                </p>
+                    <p class="description">
+                        Developed an interactive NHAI Analytics Dashboard using Power BI to analyze highway projects, toll & FASTag transactions, traffic patterns, road safety, amenities, and employee performance.
+                    </p>
 
-                <a href="https://github.com/sumitkumar1553/Hospital-Data-Analytics-Dashboard-PowerBI" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <div class="project-image">
-                <img id="samsungImage" class="dashboard-image" src="Images/Samsung_Supply_Chain_&_Logistics_Projects/Home_Dashboard (1).png" alt="Samsung Dashboard" loading="lazy">
-
-                <div class="project-slider-controls">
-                    <button type="button" class="slider-btn" data-project="samsung" data-action="prev">
-                        <i class="fa-solid fa-angle-left"></i>
-                    </button>
-
-                    <p id="samsungCounter">1 of 6</p>
-
-                    <button type="button" class="slider-btn" data-project="samsung" data-action="next">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </button>
+                    <a href="https://github.com/sumitkumar1553/NHAI-Highway-Analytics-Dashboard" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
+
             </div>
 
-            <div class="project-content">
-                <p class="project-type">Power BI Dashboard</p>
-                <h2>Samsung Supply Chain & Logistics Dashboard</h2>
-                <p class="date">March 2026</p>
+            <div class="project-card">
 
-                <p class="description">
-                    Developed an interactive Supply Chain & Logistics Dashboard using Power BI to track inventory, shipments, suppliers, customers, and operational performance.
-                </p>
+                <div class="project-image">
+                    <img id="hospitalImage" class="dashboard-image" src="Images/Hospital_Analysis_Projects/Home_Dashboard (1).png" alt="Hospital Dashboard" loading="lazy">
 
-                <a href="https://github.com/sumitkumar1553/Samsung-Supply-Chain-Analytics-Dashboard" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
+                    <div class="project-slider-controls">
+                        <button type="button" class="slider-btn" data-project="hospital" data-action="prev" aria-label="Previous hospital dashboard image">
+                            <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                        </button>
 
-        </div>
+                        <p id="hospitalCounter">1 of 6</p>
 
-        <div class="project-card">
-
-            <div class="project-image">
-                <img id="zomatoImage" class="dashboard-image" src="Images/zomato_sales_Projects/Overview_Dashboard (1).png" alt="Zomato Dashboard" loading="lazy">
-
-                <div class="project-slider-controls">
-                    <button type="button" class="slider-btn" data-project="zomato" data-action="prev">
-                        <i class="fa-solid fa-angle-left"></i>
-                    </button>
-
-                    <p id="zomatoCounter">1 of 3</p>
-
-                    <button type="button" class="slider-btn" data-project="zomato" data-action="next">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </button>
+                        <button type="button" class="slider-btn" data-project="hospital" data-action="next" aria-label="Next hospital dashboard image">
+                            <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="project-content">
-                <p class="project-type">Power BI Dashboard</p>
-                <h2>Zomato Sales Analytics Dashboard</h2>
-                <p class="date">April 2026</p>
+                <div class="project-content">
+                    <p class="project-type">Power BI & SQL Dashboard</p>
+                    <h2>Hospital Data Analytics Dashboard</h2>
+                    <p class="date">February 2026</p>
 
-                <p class="description">
-                    Developed an interactive Zomato Sales Analytics Dashboard using Power BI to analyze sales performance, customer behavior, city-wise trends, and business insights.
-                </p>
+                    <p class="description">
+                        Developed an interactive Hospital Data Analytics Dashboard using Power BI and SQL to analyze patient records, doctor performance, appointments, finance, and hospital operations.
+                    </p>
 
-                <a href="https://github.com/sumitkumar1553/Zomato-Data-Analytics-Project" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-
-        </div>
-
-        <div class="project-card">
-
-            <div class="project-image">
-                <img id="superstoreImage" class="dashboard-image" src="Images/Super_Sales_store_Projects/Super_Store_Sales_Dashboard (1).png" alt="Super Store Dashboard" loading="lazy">
-
-                <div class="project-slider-controls">
-                    <button type="button" class="slider-btn" data-project="superstore" data-action="prev">
-                        <i class="fa-solid fa-angle-left"></i>
-                    </button>
-
-                    <p id="superstoreCounter">1 of 2</p>
-
-                    <button type="button" class="slider-btn" data-project="superstore" data-action="next">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </button>
+                    <a href="https://github.com/sumitkumar1553/Hospital-Data-Analytics-Dashboard-PowerBI" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
+
             </div>
 
-            <div class="project-content">
-                <p class="project-type">Power BI Dashboard</p>
-                <h2>Super Store Sales Dashboard</h2>
-                <p class="date">May 2026</p>
+            <div class="project-card">
 
-                <p class="description">
-                    Interactive Super Store Sales Analytics Dashboard built using Power BI to analyze sales performance, profit trends, regional insights, and forecasting analysis.
-                </p>
+                <div class="project-image">
+                    <img id="samsungImage" class="dashboard-image" src="Images/Samsung_Supply_Chain_&_Logistics_Projects/Home_Dashboard (1).png" alt="Samsung Dashboard" loading="lazy">
 
-                <a href="https://github.com/sumitkumar1553/Super-Store-Sales-Performance-15-Day-Forecast" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                    <div class="project-slider-controls">
+                        <button type="button" class="slider-btn" data-project="samsung" data-action="prev" aria-label="Previous Samsung dashboard image">
+                            <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                        </button>
+
+                        <p id="samsungCounter">1 of 6</p>
+
+                        <button type="button" class="slider-btn" data-project="samsung" data-action="next" aria-label="Next Samsung dashboard image">
+                            <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <p class="project-type">Power BI Dashboard</p>
+                    <h2>Samsung Supply Chain & Logistics Dashboard</h2>
+                    <p class="date">March 2026</p>
+
+                    <p class="description">
+                        Developed an interactive Supply Chain & Logistics Dashboard using Power BI to track inventory, shipments, suppliers, customers, and operational performance.
+                    </p>
+
+                    <a href="https://github.com/sumitkumar1553/Samsung-Supply-Chain-Analytics-Dashboard" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+
             </div>
 
-        </div>
+            <div class="project-card">
 
-    </section>
+                <div class="project-image">
+                    <img id="zomatoImage" class="dashboard-image" src="Images/zomato_sales_Projects/Overview_Dashboard (1).png" alt="Zomato Dashboard" loading="lazy">
+
+                    <div class="project-slider-controls">
+                        <button type="button" class="slider-btn" data-project="zomato" data-action="prev" aria-label="Previous Zomato dashboard image">
+                            <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                        </button>
+
+                        <p id="zomatoCounter">1 of 3</p>
+
+                        <button type="button" class="slider-btn" data-project="zomato" data-action="next" aria-label="Next Zomato dashboard image">
+                            <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <p class="project-type">Power BI Dashboard</p>
+                    <h2>Zomato Sales Analytics Dashboard</h2>
+                    <p class="date">April 2026</p>
+
+                    <p class="description">
+                        Developed an interactive Zomato Sales Analytics Dashboard using Power BI to analyze sales performance, customer behavior, city-wise trends, and business insights.
+                    </p>
+
+                    <a href="https://github.com/sumitkumar1553/Zomato-Data-Analytics-Project" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img id="superstoreImage" class="dashboard-image" src="Images/Super_Sales_store_Projects/Super_Store_Sales_Dashboard (1).png" alt="Super Store Dashboard" loading="lazy">
+
+                    <div class="project-slider-controls">
+                        <button type="button" class="slider-btn" data-project="superstore" data-action="prev" aria-label="Previous Super Store dashboard image">
+                            <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                        </button>
+
+                        <p id="superstoreCounter">1 of 2</p>
+
+                        <button type="button" class="slider-btn" data-project="superstore" data-action="next" aria-label="Next Super Store dashboard image">
+                            <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-content">
+                    <p class="project-type">Power BI Dashboard</p>
+                    <h2>Super Store Sales Dashboard</h2>
+                    <p class="date">May 2026</p>
+
+                    <p class="description">
+                        Interactive Super Store Sales Analytics Dashboard built using Power BI to analyze sales performance, profit trends, regional insights, and forecasting analysis.
+                    </p>
+
+                    <a href="https://github.com/sumitkumar1553/Super-Store-Sales-Performance-15-Day-Forecast" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
 
         <div class="social">
-            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="mailto:sumitpandey1553@gmail.com" class="email">
+            <a href="mailto:sumitpandey1553@gmail.com" class="email" aria-label="Send Email">
                 <i class="fa-solid fa-envelope"></i>
             </a>
 
-            <a href="https://github.com/sumitkumar1553" class="github" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/sumitkumar1553" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                 <i class="fa-brands fa-github"></i>
             </a>
         </div>

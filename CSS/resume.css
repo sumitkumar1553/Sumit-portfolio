@@ -20,6 +20,12 @@ img {
     height: auto;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f0c36d;
+    outline-offset: 3px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -159,6 +165,10 @@ img {
     font-style: italic;
     line-height: 1.7;
     margin-bottom: 25px;
+}
+
+.resume-note {
+    margin-top: -10px;
 }
 
 /* Resume Buttons */

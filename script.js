@@ -1,59 +1,56 @@
-// Mobile navbar
-
 (function () {
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
 
-    const menuBtn =
-        document.getElementById("menuBtn");
+    if (!menuBtn || !navLinks) return;
 
-    const navLinks =
-        document.getElementById("navLinks");
+    const icon = menuBtn.querySelector("i");
 
-    if (!menuBtn || !navLinks) {
-        return;
-    }
+    function openMenu() {
+        navLinks.classList.add("show-menu");
+        menuBtn.setAttribute("aria-expanded", "true");
+        menuBtn.setAttribute("aria-label", "Close Menu");
 
-    menuBtn.addEventListener("click", function () {
-
-        navLinks.classList.toggle("show-menu");
-
-        const icon = menuBtn.querySelector("i");
-
-        if (!icon) {
-            return;
-        }
-
-        if (navLinks.classList.contains("show-menu")) {
-
+        if (icon) {
             icon.classList.remove("fa-bars");
             icon.classList.add("fa-xmark");
+        }
+    }
 
-        } else {
+    function closeMenu() {
+        navLinks.classList.remove("show-menu");
+        menuBtn.setAttribute("aria-expanded", "false");
+        menuBtn.setAttribute("aria-label", "Open Menu");
 
+        if (icon) {
             icon.classList.remove("fa-xmark");
             icon.classList.add("fa-bars");
         }
+    }
+
+    menuBtn.addEventListener("click", function (event) {
+        event.stopPropagation();
+
+        if (navLinks.classList.contains("show-menu")) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
     });
 
-    // Auto close menu
-
-    const menuLinks =
-        navLinks.querySelectorAll("a");
-
-    menuLinks.forEach(function (link) {
-
-        link.addEventListener("click", function () {
-
-            navLinks.classList.remove("show-menu");
-
-            const icon =
-                menuBtn.querySelector("i");
-
-            if (icon) {
-
-                icon.classList.remove("fa-xmark");
-                icon.classList.add("fa-bars");
-            }
-        });
+    navLinks.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", closeMenu);
     });
 
+    document.addEventListener("click", function (event) {
+        if (!navLinks.contains(event.target) && !menuBtn.contains(event.target)) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
 })();

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumit Portfolio</title>
 
+    <meta name="description" content="Sumit Portfolio - Aspiring Data Analyst skilled in Excel, SQL, Power BI, and Python. Explore projects, certificates, resume, and contact details.">
+    <meta name="author" content="Sumit">
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -16,19 +19,19 @@
 <body>
 
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main Navigation">
 
             <div class="logo">
                 <img src="Images/logo.png" alt="Sumit Portfolio Logo">
                 <span>Sumit Portfolio</span>
             </div>
 
-            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu">
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
             <div class="nav-links" id="navLinks">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html" class="active" aria-current="page">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
                 <a href="certificates.html">Certificates</a>
@@ -39,104 +42,108 @@
         </nav>
     </header>
 
-    <section class="welcome">
+    <main>
 
-        <div class="hero-wrapper">
+        <section class="welcome">
 
-            <div class="hero-content">
+            <div class="hero-wrapper">
 
-                <p class="small-title">Hello, I'm</p>
+                <div class="hero-content">
 
-                <h1>Sumit</h1>
+                    <p class="small-title">Hello, I'm</p>
 
-                <h2>Data Analyst</h2>
-                <p class="hero-subtitle">Aspiring Data Analyst | Power BI Enthusiast</p>
+                    <h1>Sumit</h1>
 
-                <p class="hero-text">
-                    I create interactive dashboards and meaningful reports using Excel, SQL, Power BI, and Python.
-                </p>
+                    <h2>Data Analyst</h2>
+                    <p class="hero-subtitle">Aspiring Data Analyst | Power BI Enthusiast</p>
 
-                <div class="hero-buttons">
-                    <a href="projects.html">View Projects</a>
+                    <p class="hero-text">
+                        I create interactive dashboards and meaningful reports using Excel, SQL, Power BI, and Python.
+                    </p>
 
-                    <a href="assets/Sumit_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">
-                        Download Resume
-                    </a>
+                    <div class="hero-buttons">
+                        <a href="projects.html">View Projects</a>
+
+                        <a href="assets/Sumit_Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn">
+                            Download Resume
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="card-icon" aria-hidden="true">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-solid fa-chart-column"></i>
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h3>Data Analytics Portfolio</h3>
+
+                    <p>
+                        Focused on dashboards, business insights, data cleaning, and visualization.
+                    </p>
+
+                    <div class="hero-skills">
+                        <span>Excel</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="card-stats">
+
+                        <div>
+                            <h4>10+</h4>
+                            <p>Projects</p>
+                        </div>
+
+                        <div>
+                            <h4>4+</h4>
+                            <p>Tools</p>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
-            <div class="hero-card">
+        </section>
 
-                <div class="card-icon">
-                    <i class="fa-solid fa-chart-pie"></i>
-                    <i class="fa-solid fa-database"></i>
-                    <i class="fa-solid fa-chart-column"></i>
-                    <i class="fa-solid fa-laptop-code"></i>
-                </div>
+        <section class="intro">
 
-                <h3>Data Analytics Portfolio</h3>
+            <div class="intro-card">
+
+                <p class="section-label">Portfolio Overview</p>
+
+                <h2>About My Portfolio</h2>
 
                 <p>
-                    Focused on dashboards, business insights, data cleaning, and visualization.
+                    Welcome to my portfolio website. Here you can explore my data analytics projects, resume, certificates, and contact details. I am passionate about working with data and building interactive dashboards using Excel, SQL, Power BI, and Python to transform raw data into meaningful business insights.
                 </p>
-
-                <div class="hero-skills">
-                    <span>Excel</span>
-                    <span>SQL</span>
-                    <span>Power BI</span>
-                    <span>Python</span>
-                </div>
-
-                <div class="card-stats">
-
-                    <div>
-                        <h4>10+</h4>
-                        <p>Projects</p>
-                    </div>
-
-                    <div>
-                        <h4>4+</h4>
-                        <p>Tools</p>
-                    </div>
-
-                </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
-
-    <section class="intro">
-
-        <div class="intro-card">
-
-            <p class="section-label">Portfolio Overview</p>
-
-            <h2>About My Portfolio</h2>
-
-            <p>
-                Welcome to my portfolio website. Here you can explore my data analytics projects, resume, certificates, and contact details. I am passionate about working with data and building interactive dashboards using Excel, SQL, Power BI, and Python to transform raw data into meaningful business insights.
-            </p>
-
-        </div>
-
-    </section>
+    </main>
 
     <footer>
 
         <div class="social">
 
-            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="mailto:sumitpandey1553@gmail.com" class="email">
+            <a href="mailto:sumitpandey1553@gmail.com" class="email" aria-label="Send Email">
                 <i class="fa-solid fa-envelope"></i>
             </a>
 
-            <a href="https://github.com/sumitkumar1553" class="github" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/sumitkumar1553" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                 <i class="fa-brands fa-github"></i>
             </a>
 

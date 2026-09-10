@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Sumit Portfolio</title>
 
+    <meta name="description" content="Contact Sumit for data analytics projects, internship opportunities, and professional connections.">
+    <meta name="author" content="Sumit">
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="icon" type="image/png" href="Images/logo.png">
+    <link rel="icon" type="image/png" href="Images/logo.png">
 
     <link rel="stylesheet" href="CSS/contact.css">
 
@@ -20,14 +23,14 @@
 
     <header>
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main Navigation">
 
             <div class="logo">
                 <img src="Images/logo.png" alt="Sumit Portfolio Logo">
                 <span>Sumit Portfolio</span>
             </div>
 
-            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu">
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
@@ -38,7 +41,7 @@
                 <a href="projects.html">Projects</a>
                 <a href="certificates.html">Certificates</a>
                 <a href="resume.html">Resume</a>
-                <a href="contact.html" class="active">Contact</a>
+                <a href="contact.html" class="active" aria-current="page">Contact</a>
 
             </div>
 
@@ -46,127 +49,130 @@
 
     </header>
 
-    <section class="contact-header">
+    <main>
 
-        <div class="hero-box">
+        <section class="contact-header">
 
-            <h1>Contact Me</h1>
+            <div class="hero-box">
 
-            <p>Feel free to connect with me</p>
+                <h1>Contact Me</h1>
 
-            <div class="line"></div>
+                <p>Feel free to connect with me</p>
 
-        </div>
+                <div class="line"></div>
 
-    </section>
+            </div>
 
-    <section class="contact-section">
+        </section>
 
-        <div class="contact-container">
+        <section class="contact-section">
 
-            <!-- Left Side -->
+            <div class="contact-container">
 
-            <div class="contact-info">
+                <div class="contact-info">
 
-                <h2>Let's Talk</h2>
+                    <h2>Let's Talk</h2>
 
-                <p>
-                    If you have any internship opportunities, project ideas, or questions related to data analytics, feel free to contact me.
-                </p>
+                    <p>
+                        If you have any internship opportunities, project ideas, or questions related to data analytics, feel free to contact me.
+                    </p>
 
-                <div class="info-box">
+                    <div class="info-box">
 
-                    <div class="info-item">
+                        <div class="info-item">
 
-                        <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
 
-                        <div>
-                            <h3>Email</h3>
+                            <div>
+                                <h3>Email</h3>
 
-                            <p>
-                                <a href="mailto:sumitpandey1553@gmail.com">
-                                    sumitpandey1553@gmail.com
-                                </a>
-                            </p>
+                                <p>
+                                    <a href="mailto:sumitpandey1553@gmail.com">
+                                        sumitpandey1553@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="info-item">
 
-                    <div class="info-item">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
 
-                        <i class="fa-brands fa-linkedin"></i>
+                            <div>
+                                <h3>LinkedIn</h3>
 
-                        <div>
-                            <h3>LinkedIn</h3>
+                                <p>
+                                    <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" target="_blank" rel="noopener noreferrer">
+                                        linkedin.com/in/sumit-kumar-2k07
+                                    </a>
+                                </p>
+                            </div>
 
-                            <p>
-                                <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" target="_blank">
-                                    linkedin.com/in/sumit-kumar-2k07
-                                </a>
-                            </p>
                         </div>
 
-                    </div>
+                        <div class="info-item">
 
-                    <div class="info-item">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
 
-                        <i class="fa-brands fa-github"></i>
+                            <div>
+                                <h3>GitHub</h3>
 
-                        <div>
-                            <h3>GitHub</h3>
+                                <p>
+                                    <a href="https://github.com/sumitkumar1553" target="_blank" rel="noopener noreferrer">
+                                        github.com/sumitkumar1553
+                                    </a>
+                                </p>
+                            </div>
 
-                            <p>
-                                <a href="https://github.com/sumitkumar1553" target="_blank">
-                                    github.com/sumitkumar1553
-                                </a>
-                            </p>
                         </div>
 
                     </div>
 
                 </div>
 
+                <div class="contact-form">
+
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="b6bc47a8-58fa-463d-b89e-350fd76bd2cf">
+
+                        <label class="sr-only" for="name">Your Name</label>
+                        <input id="name" type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+
+                        <label class="sr-only" for="email">Your Email</label>
+                        <input id="email" type="email" name="email" placeholder="Your Email" autocomplete="email" required>
+
+                        <label class="sr-only" for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+
+                        <button type="submit">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
             </div>
 
-            <!-- Right Side -->
+        </section>
 
-            <div class="contact-form">
-
-                <form action="https://api.web3forms.com/submit" method="POST">
-
-                    <input type="hidden" name="access_key" value="b6bc47a8-58fa-463d-b89e-350fd76bd2cf">
-
-                    <input type="text" name="name" placeholder="Your Name" required>
-
-                    <input type="email" name="email" placeholder="Your Email" required>
-
-                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </section>
+    </main>
 
     <footer>
 
         <div class="social">
 
-            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank">
+            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="mailto:sumitpandey1553@gmail.com" class="email">
+            <a href="mailto:sumitpandey1553@gmail.com" class="email" aria-label="Send Email">
                 <i class="fa-solid fa-envelope"></i>
             </a>
 
-            <a href="https://github.com/sumitkumar1553" class="github" target="_blank">
+            <a href="https://github.com/sumitkumar1553" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                 <i class="fa-brands fa-github"></i>
             </a>
 

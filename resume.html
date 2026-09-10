@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Sumit Portfolio</title>
 
+    <meta name="description" content="View and download Sumit's latest Data Analyst resume.">
+    <meta name="author" content="Sumit">
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="icon" type="image/png" href="Images/logo.png">
-     
+    <link rel="icon" type="image/png" href="Images/logo.png">
+
     <link rel="stylesheet" href="CSS/resume.css">
 
 </head>
@@ -20,14 +23,14 @@
 
     <header>
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main Navigation">
 
             <div class="logo">
                 <img src="Images/logo.png" alt="Sumit Portfolio Logo">
                 <span>Sumit Portfolio</span>
             </div>
 
-            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu">
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
@@ -37,7 +40,7 @@
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
                 <a href="certificates.html">Certificates</a>
-                <a href="resume.html" class="active">Resume</a>
+                <a href="resume.html" class="active" aria-current="page">Resume</a>
                 <a href="contact.html">Contact</a>
 
             </div>
@@ -46,65 +49,73 @@
 
     </header>
 
-    <section class="resume-header">
+    <main>
 
-        <div class="hero-box">
+        <section class="resume-header">
 
-            <h1>My Resume</h1>
+            <div class="hero-box">
 
-            <p>Download or view my resume here</p>
+                <h1>My Resume</h1>
 
-            <div class="line"></div>
+                <p>Download or view my resume here</p>
 
-        </div>
-
-    </section>
-
-    <section class="resume-section">
-
-        <div class="resume-box">
-
-            <h2>Resume Preview</h2>
-
-            <p>
-                Here is my latest resume. You can view it directly or download it for more details.
-            </p>
-
-            <div class="resume-buttons">
-
-                <a href="assets/Sumit_Resume.pdf" target="_blank">
-                    Open Resume
-                </a>
-
-                <a href="assets/Sumit_Resume.pdf" download class="download-btn">
-                    Download Resume
-                </a>
+                <div class="line"></div>
 
             </div>
 
-            <div class="resume-viewer">
+        </section>
 
-                <iframe src="assets/Sumit_Resume.pdf" title="Sumit Resume Preview"></iframe>
+        <section class="resume-section">
+
+            <div class="resume-box">
+
+                <h2>Resume Preview</h2>
+
+                <p>
+                    Here is my latest resume. You can view it directly or download it for more details.
+                </p>
+
+                <div class="resume-buttons">
+
+                    <a href="assets/Sumit_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                        Open Resume
+                    </a>
+
+                    <a href="assets/Sumit_Resume.pdf" download class="download-btn">
+                        Download Resume
+                    </a>
+
+                </div>
+
+                <p class="resume-note">
+                    If the preview does not load, please use the Open Resume or Download Resume button.
+                </p>
+
+                <div class="resume-viewer">
+
+                    <iframe src="assets/Sumit_Resume.pdf" title="Sumit Resume Preview"></iframe>
+
+                </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
     <footer>
 
         <div class="social">
 
-            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank">
+            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="mailto:sumitpandey1553@gmail.com" class="email">
+            <a href="mailto:sumitpandey1553@gmail.com" class="email" aria-label="Send Email">
                 <i class="fa-solid fa-envelope"></i>
             </a>
 
-            <a href="https://github.com/sumitkumar1553" class="github" target="_blank">
+            <a href="https://github.com/sumitkumar1553" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                 <i class="fa-brands fa-github"></i>
             </a>
 

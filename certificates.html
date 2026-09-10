@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificates | Sumit Portfolio</title>
 
+    <meta name="description" content="Certificates completed by Sumit in Data Analytics, Power BI, Microsoft Excel, and Python.">
+    <meta name="author" content="Sumit">
+
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="icon" type="image/png" href="Images/logo.png">
-     
+    <link rel="icon" type="image/png" href="Images/logo.png">
+
     <link rel="stylesheet" href="CSS/certificates.css">
 
 </head>
@@ -20,14 +23,14 @@
 
     <header>
 
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main Navigation">
 
             <div class="logo">
                 <img src="Images/logo.png" alt="Sumit Portfolio Logo">
                 <span>Sumit Portfolio</span>
             </div>
 
-            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu">
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open Menu" aria-expanded="false">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
@@ -36,7 +39,7 @@
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html">Projects</a>
-                <a href="certificates.html" class="active">Certificates</a>
+                <a href="certificates.html" class="active" aria-current="page">Certificates</a>
                 <a href="resume.html">Resume</a>
                 <a href="contact.html">Contact</a>
 
@@ -46,117 +49,121 @@
 
     </header>
 
-    <section class="cert-header">
+    <main>
 
-        <div class="hero-box">
+        <section class="cert-header">
 
-            <h1>Certificates</h1>
+            <div class="hero-box">
 
-            <p>My learning journey and achievements</p>
+                <h1>Certificates</h1>
 
-            <div class="line"></div>
+                <p>My learning journey and achievements</p>
 
-        </div>
-
-    </section>
-
-    <section class="cert-section">
-
-        <div class="cert-card">
-
-            <div class="cert-image">
-                <img src="Images/certificate_1.png" alt="Deloitte Certificate" loading="lazy">
-            </div>
-
-            <div class="cert-content">
-
-                <p class="cert-type">Deloitte</p>
-
-                <h2>Data Analytics Job Simulation</h2>
-
-                <p class="cert-desc">
-                    Completed Deloitte Data Analytics Job Simulation focused on data analysis, forensic technology, and business problem-solving.
-                </p>
+                <div class="line"></div>
 
             </div>
 
-        </div>
+        </section>
 
-        <div class="cert-card">
+        <section class="cert-section">
 
-            <div class="cert-image">
-                <img src="Images/certificate_2.png" alt="Power BI Certificate" loading="lazy">
-            </div>
+            <div class="cert-card">
 
-            <div class="cert-content">
+                <div class="cert-image">
+                    <img src="Images/certificate_1.png" alt="Deloitte Data Analytics Job Simulation Certificate" loading="lazy">
+                </div>
 
-                <p class="cert-type">Power BI</p>
+                <div class="cert-content">
 
-                <h2>Power BI Micro Course</h2>
+                    <p class="cert-type">Deloitte</p>
 
-                <p class="cert-desc">
-                    Completed a Power BI Micro Course focused on dashboard development, data visualization, KPI analysis, and interactive reporting using Power BI.
-                </p>
+                    <h2>Data Analytics Job Simulation</h2>
 
-            </div>
+                    <p class="cert-desc">
+                        Completed Deloitte Data Analytics Job Simulation focused on data analysis, forensic technology, and business problem-solving.
+                    </p>
 
-        </div>
-
-        <div class="cert-card">
-
-            <div class="cert-image">
-                <img src="Images/certificate_3.png" alt="Excel Certificate" loading="lazy">
-            </div>
-
-            <div class="cert-content">
-
-                <p class="cert-type">Microsoft Excel</p>
-
-                <h2>Excel with A.I Masterclass</h2>
-
-                <p class="cert-desc">
-                    Completed Microsoft Excel with A.I Masterclass focused on formulas, data cleaning, charts, dashboards, and advanced Excel analytics techniques.
-                </p>
+                </div>
 
             </div>
 
-        </div>
+            <div class="cert-card">
 
-        <div class="cert-card">
+                <div class="cert-image">
+                    <img src="Images/certificate_2.png" alt="Power BI Micro Course Certificate" loading="lazy">
+                </div>
 
-            <div class="cert-image">
-                <img src="Images/certificate_4.png" alt="Python Certificate" loading="lazy">
+                <div class="cert-content">
+
+                    <p class="cert-type">Power BI</p>
+
+                    <h2>Power BI Micro Course</h2>
+
+                    <p class="cert-desc">
+                        Completed a Power BI Micro Course focused on dashboard development, data visualization, KPI analysis, and interactive reporting using Power BI.
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="cert-content">
+            <div class="cert-card">
 
-                <p class="cert-type">Python</p>
+                <div class="cert-image">
+                    <img src="Images/certificate_3.png" alt="Microsoft Excel with AI Masterclass Certificate" loading="lazy">
+                </div>
 
-                <h2>Python for Beginners</h2>
+                <div class="cert-content">
 
-                <p class="cert-desc">
-                    Learned Python programming fundamentals including variables, loops, functions, data structures, and problem-solving concepts.
-                </p>
+                    <p class="cert-type">Microsoft Excel</p>
+
+                    <h2>Excel with A.I Masterclass</h2>
+
+                    <p class="cert-desc">
+                        Completed Microsoft Excel with A.I Masterclass focused on formulas, data cleaning, charts, dashboards, and advanced Excel analytics techniques.
+                    </p>
+
+                </div>
 
             </div>
 
-        </div>
+            <div class="cert-card">
 
-    </section>
+                <div class="cert-image">
+                    <img src="Images/certificate_4.png" alt="Python for Beginners Certificate" loading="lazy">
+                </div>
+
+                <div class="cert-content">
+
+                    <p class="cert-type">Python</p>
+
+                    <h2>Python for Beginners</h2>
+
+                    <p class="cert-desc">
+                        Learned Python programming fundamentals including variables, loops, functions, data structures, and problem-solving concepts.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
 
         <div class="social">
 
-            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank">
+            <a href="https://www.linkedin.com/in/sumit-kumar-2k07/" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
 
-            <a href="mailto:sumitpandey1553@gmail.com" class="email">
+            <a href="mailto:sumitpandey1553@gmail.com" class="email" aria-label="Send Email">
                 <i class="fa-solid fa-envelope"></i>
             </a>
 
-            <a href="https://github.com/sumitkumar1553" class="github" target="_blank">
+            <a href="https://github.com/sumitkumar1553" class="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                 <i class="fa-brands fa-github"></i>
             </a>
 

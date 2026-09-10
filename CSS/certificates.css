@@ -21,6 +21,12 @@ img {
     display: block;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f0c36d;
+    outline-offset: 3px;
+}
+
 /* Navbar */
 
 .navbar {

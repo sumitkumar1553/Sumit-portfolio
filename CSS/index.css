@@ -20,6 +20,12 @@ img {
     height: auto;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f0c36d;
+    outline-offset: 3px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -470,6 +476,8 @@ footer {
 
     .hero-skills {
         gap: 7px;
+        overflow-x: auto;
+        padding-bottom: 2px;
     }
 
     .hero-skills span {
